@@ -1,9 +1,6 @@
 body {
-    background-color: cornflowerblue;
-}
-body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0%;
+    margin: 0;
     padding: 20px;
     background-color: #f9f9f9;
     color: #444;
@@ -24,7 +21,7 @@ h1 {
 }
 
 #task-input {
-    width: calc(100% - 110 px);
+    width: calc(100% - 110px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -41,6 +38,15 @@ h1 {
     cursor: pointer;
     font-size: 16px;
 }
+
 #addtask:hover {
     background-color: #45a049;
+}
+
+#task-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }

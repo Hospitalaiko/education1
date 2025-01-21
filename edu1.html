@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="/education1/src/styles/style.css">
-    <script src="/education1/src/script.js"></script>
 </head>
 <body>
-    <h1>Список задач</h1>
-
-    <div id="todo-container">
-        <input type="text" id="task-input" placeholder="Введите задачу">
-        <button id="addtask">Добавьте задачу</button>
-        <ul id="task-list"></ul>
-    </div>
+    <header>
+        <h1>Список задач</h1>
+    </header>
+    <main id="todo-container">
+        <section>
+            <form id="task-form" action="submit">
+                <input type="text" id="task-input" placeholder="Введите задачу">
+                <button type="submit" id="addtask">Добавьте задачу</button>
+            </form>
+        </section>
+        <section>
+            <ul class="task-list" id="taskList"></ul>
+        </section>
+    </main>
+    <script src="/education1/src/script.js"></script>
 </body>
 </html>
